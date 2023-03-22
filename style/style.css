@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/*forside*/
+
+.front-page {
+  width: 100vw;
+  height: 60vh;
+  background-image: linear-gradient(#0000a4, #5858c9);
+}
+
+
+
+.logo {
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+.front-page-text {
+  width: 100vw;
+  height: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-page-text div {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.front-page-text h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.front-page-text h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-left: 45px;
+}
+
+/* kom igang section */
+
+.start-now {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-now-box {
+  width: 250px;
+}
+
+.start-now-box h3 {
+  font-size: 4rem;
+}
+
+.start-now-box div {
+  height: 50px;
+  background-color: #be3400;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* dashbord section */
+
+.grid {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-area {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, fr);
+}
+
+.cards {
+  width: 350px;
+  height: 250px;
+  background-image: linear-gradient(#0000a4, #5858c9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cards-logo {
+  color: white;
+  font-size: 5rem;
+}
+
+.cards div {
+  background-color: #be3400;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.cards-par {
+  color: white;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* slideshow / carousel */
+
+.slideshow {
+  width: 100vw;
+  height: 40vh;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.img-text {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  color: white;
+}
+
+.img-text h2 {
+  font-size: 3rem;
+}
+
+.img-text p {
+  font-size: 2rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
+.app img {
+  width: 160px;
+}
+
+.img-text2 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.56);
+  margin-top: 80px;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.img-text3 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.56);
+  margin-top: 120px;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.mySlides {
+  width: 100%;
+  height: 100%;
+}
+
+.myslides {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 90vw;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* spørgsmål section */
+
+.ask {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ask div {
+  width: 90%;
+}
+
+.ask div h2 {
+  color: #0000a4;
+  font-size: 5rem;
+}
+
+/* form section */
+
+.form {
+  height: 80vh;
+  width: 100vw;
+  margin-left: 15px;
+}
+
+
+input {
+  width: 350px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.spørgsmål {
+  height: 350px;
+  width: 350px;
+  margin-top: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+#send {
+  background-color: #0dc300;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  height: 50vh;
+  background-image: linear-gradient(#0000a4, #5858c9);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo2 {
+  width: 250px;
+}
+
+.so-me {
+  font-size: 5rem;
+  color: white;
+}
+
+.about {
+  color: white;
+}
+
+/* burger menu*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #0000a4;
+  color: white;
+}
+
+/* linkpoint side */
+
+.linkpoint {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0000a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.linkpoint h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+.linkpoint div {
+  background-color: #be3400;
+  width: 260px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1920px) {
+  .front-page .logo {
+    margin-left: 300px;
+  }
+
+  .front-page {
+    height: 40vh;
+  }
+
+  .grid-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .slideshow {
+    width: 100vw;
+  }
+
+  .slideshow-container {
+    width: 1140px;
+  }
+
+  .slider-img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .img-text {
+    background-color: rgba(0, 0, 0, 0.56);
+    width: 500px;
+    height: 170px;
+    margin-top: 300px;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .img-text2 {
+    width: 500px;
+    height: 170px;
+    margin-top: 300px;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .img-text3 {
+    width: 500px;
+    height: 170px;
+    margin-top: 300px;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .ask {
+    width: 100vw;
+  }
+
+  .ask div {
+    margin-left: 650px;
+    margin-top: 150px;
+  }
+
+  .form {
+    height: 60vh;
+  }
+
+  input {
+    width: 1140px;
+  }
+
+  .spørgsmål {
+    width: 1140px;
+  }
+
+  form {
+    margin-left: 380px;
+  }
+
+  footer {
+    height: 30vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 50px;
+  }
+}
